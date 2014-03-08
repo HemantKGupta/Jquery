@@ -1,0 +1,4 @@
+for ( var i = 0; i < 5; i++ ) {
+    // Logs "try 0", "try 1", ..., "try 4".
+    console.log( "try " + i );
+}

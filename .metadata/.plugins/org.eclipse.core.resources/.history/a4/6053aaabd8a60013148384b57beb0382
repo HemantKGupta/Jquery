@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//The .html() method used as a setter:
+$( "h1" ).html( "hello world" );
+
+//The .html() method used as a getter:
+$( "h1" ).html();
+
+//Attempting to call a jQuery method after calling a getter.
+//This will NOT work:
+$( "h1" ).html().addClass( "test" );
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

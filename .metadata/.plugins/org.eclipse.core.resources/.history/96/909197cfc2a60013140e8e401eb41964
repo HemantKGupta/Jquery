@@ -1,0 +1,11 @@
+// Function declaration.
+ 
+function foo() {
+    // Do something.
+}
+
+//Named function expression.
+
+var foo = function() {
+    // Do something.
+};

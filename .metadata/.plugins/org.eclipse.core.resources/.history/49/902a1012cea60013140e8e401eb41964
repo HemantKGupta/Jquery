@@ -1,0 +1,14 @@
+//With closures, functions have access to variables that were available in the scope 
+//where the function was created.
+
+// the function "sees" the change in the variable's value even after the function is defined, 
+// resulting in each function referencing the last value stored in the variable.
+
+// Each function executed within the loop will reference
+// the last value stored in i (5).
+// This won't behave as we want it to - every 100 milliseconds, 5 will alert
+for ( var i = 0; i < 5; i++ ) {
+    setTimeout(function() {
+        alert( i );
+    }, i * 100 );
+}

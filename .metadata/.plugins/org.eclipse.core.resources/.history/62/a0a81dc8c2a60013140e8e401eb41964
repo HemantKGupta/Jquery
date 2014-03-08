@@ -1,0 +1,5 @@
+// Function declaration.
+ 
+function foo() {
+    // Do something.
+}

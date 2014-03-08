@@ -1,0 +1,81 @@
+// A simple array with constructor.
+var myArray1 = new Array( "hello", "world" );
+ 
+// Literal declaration, the preferred way.
+var myArray2 = [ "hello", "world" ];
+
+//Creating empty arrays and adding values
+
+var myArray = [];
+ 
+// Adds "hello" on index 0
+myArray.push( "hello" );
+ 
+// Adds "world" on index 1
+myArray.push( "world" );
+ 
+// Adds "!" on index 2
+myArray[ 2 ] = "!";
+
+//Leaving indices
+
+var myArray = [];
+ 
+myArray[ 0 ] = "hello";
+myArray[ 1 ] = "world";
+myArray[ 3 ] = "!";
+ 
+console.log( myArray ); // [ "hello", "world", undefined, "!" ];
+
+//Accessing array items by index
+
+var myArray = [ "hello", "world", "!" ];
+ 
+console.log( myArray[ 2 ] ); // "!"
+
+//Length of an array
+
+var myArray = [ "hello", "world", "!" ];
+ 
+console.log( myArray.length ); // 3
+
+//For loops and arrays - alternate method
+
+var myArray = [ "hello", "world", "!" ];
+ 
+for ( var i in myArray ) {
+ 
+    console.log( myArray[ i ] );
+ 
+}
+
+var myArray = [ 2, 3, 4 ];
+var myOtherArray = [ 5, 6, 7 ];
+var wholeArray = myArray.concat( myOtherArray ); // [ 2, 3, 4, 5, 6, 7 ]
+
+//Joining elements
+
+var myArray = [ "hello", "world", "!" ];
+ 
+// The default separator is a comma.
+console.log( myArray.join() );     // "hello,world,!"
+ 
+// Any string can be used as separator...
+console.log( myArray.join( " " ) );  // "hello world !";
+console.log( myArray.join( "!!" ) ); // "hello!!world!!!";
+ 
+// ...including an empty one.
+console.log( myArray.join( "" ) );   // "helloworld!"
+
+//Pushing and popping
+
+var myArray = [];
+ 
+myArray.push( 0 ); // [ 0 ]
+myArray.push( 2 ); // [ 0 , 2 ]
+myArray.push( 7 ); // [ 0 , 2 , 7 ]
+myArray.pop();     // [ 0 , 2 ]
+
+var myArray = [ "world" , "hello" ];
+myArray.reverse(); // [ "hello", "world" ]
+

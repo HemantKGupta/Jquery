@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+$( "#myId" ); // Note IDs must be unique per page.
+$( ".myClass" );
+$( "input[name='first_name']" ); // Beware, this can be very slow in older browsers
+$( "#contents ul.people li" );
+
+// Pseudo
+$( "a.external:first" );
+$( "tr:odd" );
+ 
+// Select all input-like elements in a form (more on this below).
+$( "#myForm :input" );
+$( "div:visible" );
+ 
+// All except the first three divs.
+$( "div:gt(2)" );
+ 
+// All currently animated divs.
+$( "div:animated" );
+
+//Testing whether a selection contains elements.
+if ( $( "div.foo" ).length ) {
+    ...
+}
+
+//Saving Selections
+var $divs = $( "div" );
+
+//Refining selections.
+$( "div.foo" ).has( "p" );         // div.foo elements that contain <p> tags
+$( "h1" ).not( ".bar" );           // h1 elements that don't have a class of bar
+$( "ul li" ).filter( ".current" ); // unordered list items with class of current
+$( "ul li" ).first();              // just the first unordered list item
+$( "ul li" ).eq( 5 );              // the sixth
+
+//Selecting Form Elements
+
+$( "form :button" );
+$( "form :checkbox" );
+$( "form :checked" );  // :checked targets only the checked checkboxes as well as 			    // checked radio buttons:
+$( "form :disabled" ); // any <input> elements with the disabled attribute:
+$( "form :enabled" );
+$( "form :file" ); // any <input> elements that have a type="file"
+
+
+$( "form :image" ); // any <input> elements that have a type="image"
+$( "form :input" );  //:input selector selects all <input>, <textarea>, <select>, 				//and <button> elements:
+$( "form :password" );
+$( "form :radio" );
+// Selects all radio buttons with the name attribute of gender.
+$( "form input[name='gender']:radio" );
+
+$( "form :reset" );
+$( "form :selected" ); //:selected pseudo-selector targets any selected items 				 // in <option> elements:
+$( "form :submit" );
+$( "form :text" );
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

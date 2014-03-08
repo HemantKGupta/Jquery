@@ -1,0 +1,21 @@
+//Global
+var x = 9;
+
+//local
+function myFunc() {
+    var x = 5;
+}
+ 
+console.log( x ); // ReferenceError: x is not defined
+
+//Outer and inner
+function outer() {
+    var x = 5;
+ 
+    function inner() {
+        console.log( x );
+    }
+ 
+    inner(); // 5
+}
+

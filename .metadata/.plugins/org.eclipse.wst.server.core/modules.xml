@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:00Javascript" serverId="HTTP Preview at localhost"/>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:00Jquery" serverId="HTTP Preview at localhost"/>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:Test" serverId="HTTP Preview at localhost"/>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:02JS" serverId="HTTP Preview at localhost"/>
+</modules>

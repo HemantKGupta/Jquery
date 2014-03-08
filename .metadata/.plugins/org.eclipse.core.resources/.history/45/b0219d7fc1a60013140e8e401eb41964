@@ -1,0 +1,5 @@
+// A simple array with constructor.
+var myArray1 = new Array( "hello", "world" );
+ 
+// Literal declaration, the preferred way.
+var myArray2 = [ "hello", "world" ];

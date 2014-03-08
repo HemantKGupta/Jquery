@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//The .html() method used as a setter:
+$( "h1" ).html( "hello world" );
+
+//The .html() method used as a getter:
+$( "h1" ).html();
+
+//Attempting to call a jQuery method after calling a getter.
+//This will NOT work:
+$( "h1" ).html().addClass( "test" );
+
+$( "#content" )
+.find( "h3" )
+.eq( 2 )
+    .html( "new text for the third h3!" )
+    .end() // Restores the selection to all h3s in #content
+.eq( 0 )
+    .html( "new text for the first h3!" );
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

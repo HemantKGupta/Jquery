@@ -1,0 +1,5 @@
+// Strings can be created with double or single quotes.
+var a = "I am a string";
+var b = 'So am I!';
+alert( a );
+alert( b );

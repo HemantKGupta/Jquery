@@ -1,0 +1,35 @@
+// A simple array with constructor.
+var myArray1 = new Array( "hello", "world" );
+ 
+// Literal declaration, the preferred way.
+var myArray2 = [ "hello", "world" ];
+
+//Creating empty arrays and adding values
+
+var myArray = [];
+ 
+// Adds "hello" on index 0
+myArray.push( "hello" );
+ 
+// Adds "world" on index 1
+myArray.push( "world" );
+ 
+// Adds "!" on index 2
+myArray[ 2 ] = "!";
+
+//Leaving indices
+
+var myArray = [];
+ 
+myArray[ 0 ] = "hello";
+myArray[ 1 ] = "world";
+myArray[ 3 ] = "!";
+ 
+console.log( myArray ); // [ "hello", "world", undefined, "!" ];
+
+//Accessing array items by index
+
+var myArray = [ "hello", "world", "!" ];
+ 
+console.log( myArray[ 2 ] ); // "!"
+

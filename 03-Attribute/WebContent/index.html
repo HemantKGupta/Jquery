@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+// .attr() as a setter:
+$( "a" ).attr( "href", "allMyHrefsAreTheSameNow.html" );
+ 
+$( "a" ).attr({
+    title: "all titles are the same too!",
+    href: "somethingNew.html"
+});
+
+//.attr() as a getter:
+$( "a" ).attr( "href" ); // Returns the href for the first a element in the document
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

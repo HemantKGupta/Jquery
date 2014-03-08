@@ -1,0 +1,2 @@
+//With closures, functions have access to variables that were available in the scope 
+//where the function was created. 

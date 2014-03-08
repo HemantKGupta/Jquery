@@ -1,0 +1,9 @@
+// Concatenation
+var foo = "hello";
+var bar = "world";
+ 
+console.log( foo + " " + bar ); // "hello world"
+
+//Multiplication and division
+2 * 3;
+2 / 3;

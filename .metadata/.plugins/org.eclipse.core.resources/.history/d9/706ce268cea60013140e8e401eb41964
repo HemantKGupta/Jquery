@@ -1,0 +1,31 @@
+//With closures, functions have access to variables that were available in the scope 
+//where the function was created.
+
+// the function "sees" the change in the variable's value even after the function is defined, 
+// resulting in each function referencing the last value stored in the variable.
+
+// Each function executed within the loop will reference
+// the last value stored in i (5).
+// This won't behave as we want it to - every 100 milliseconds, 5 will alert
+for ( var i = 0; i < 5; i++ ) {
+    setTimeout(function() {
+        alert( i );
+    }, i * 100 );
+}
+
+//Closures can be used to prevent this by creating a unique scope for each iteration 
+// – storing each unique value of the variable within its scope.
+
+//Using a closure to create a new private scope
+//fix: “close” the value of i inside createFunction, so it won't change
+var createFunction = function( i ) {
+ return function() {
+     alert( i );
+ };
+};
+
+for ( var i = 0; i < 5; i++ ) {
+ setTimeout( createFunction( i ), i * 100 );
+}
+
+//Closures can also be used to resolve issues with the this keyword, which is unique to each scope:

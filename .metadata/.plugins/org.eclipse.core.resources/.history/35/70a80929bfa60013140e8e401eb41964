@@ -1,0 +1,14 @@
+// Single- and multi-line comments.
+ 
+// This is an example of a single-line comment.
+ 
+/*
+ * this is an example
+ * of a
+ * multi-line
+ * comment.
+ */
+
+// Whitespace is insignificant.
+var hello = "Hello";
+var world     =      "World!";

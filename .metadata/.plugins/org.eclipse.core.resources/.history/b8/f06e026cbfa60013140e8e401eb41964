@@ -1,0 +1,15 @@
+// Strings can be created with double or single quotes.
+var a = "I am a string";
+var b = 'So am I!';
+alert( a );
+alert( b );
+
+//Sometimes a string may contain quotation marks.
+var statement1 = 'He said "JavaScript is awesome!"';
+var statement2 = "He said \"JavaScript is awesome!\"";
+
+//Numbers are any whole or floating point integer.
+var num1 = 100;
+var num2 = 100.10;
+var num3 = 0.10;
+

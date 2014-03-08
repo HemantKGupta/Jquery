@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="Test_Jquery" name="Test_Jquery" path="/media/Hemant/GitRepos/Jquery/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/Test_Jquery" type="static"/>
+  <module context="00Jquery" name="00Jquery" path="/media/Hemant/GitRepos/Jquery/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/00Jquery" type="static"/>
+</server>
